@@ -4,17 +4,17 @@
 }
 
 #gray-overlay {
+    background-color: #000;
     position: fixed;
-    z-index: 0;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    opacity: 0.25;
     -moz-opacity: 0.25;
     -khtml-opacity: 0.25;
-    opacity: 0.25;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    z-index: 0;
 }
 
 #modalWindow {
@@ -27,17 +27,21 @@
 }
 
 .close-button {
+    background-color: #6a689b;
     position: absolute;
     top: 0;
     right: 0;
     width: 20px;
     height: 20px;
-    font-size: 20px;
-    font-weight: bold;
+    font: bold 20px/1.25 'Times New Roman';
     text-align: center;
-    background-color: #6a689b;
 }
 
 .close-button:hover {
     cursor: pointer;
+}
+
+.description p {
+    font: normal 1.25em/1.5 'Times New Roman';
+    margin-bottom: 1em;
 }
